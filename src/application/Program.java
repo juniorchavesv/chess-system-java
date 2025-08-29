@@ -20,7 +20,7 @@ public class Program {
 		
 		
 		
-		while (true) {
+		while (!chessMatch.getCheckMate()) {
 						
 			// INTEFACE USUARIO = UI
 			try {
@@ -53,11 +53,9 @@ public class Program {
 				sc.nextLine();
 			}
 		}
-			
 		
-		
-		
-		
+		UI.clearScreen();
+		UI.printMatch(chessMatch, captured);
 		
 	}
 
